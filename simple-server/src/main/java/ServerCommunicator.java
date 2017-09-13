@@ -63,6 +63,7 @@ public class ServerCommunicator {
 
     public static void main(String[] args) {
         String portNumber = args[0];
-        ServerCommunicator.SINGLETON.run(portNumber);
+        ServerCommunicator.SINGLETON.run(portNumber); //intelliJ is configured to make it run on port 8080
+        System.out.println("Running on port " + portNumber + ".");
     }
 }
